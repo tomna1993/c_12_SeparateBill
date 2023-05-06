@@ -1,13 +1,13 @@
+#include <cs50.h>
 #include <stdio.h>
-#include <cs50.c>
 
 float half(float bill, float tax, int tip);
 
 int main(void)
 {
-	float bill = get_float("Bill before tax and tip: ");
-	float taxPercent = get_float("Sale tax percent: ");
-	int tipPercent = get_float("Tip percent: ");
+	float bill = get_float("Bill before tax and tip (float): ");
+	float taxPercent = get_float("Sale tax percent (float): ");
+	int tipPercent = get_float("Tip percent (int): ");
 
 	// Print out the money to pay
 	printf("You will owe $%.2f each!\n", half(bill, taxPercent, tipPercent));
